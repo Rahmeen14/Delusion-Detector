@@ -37,7 +37,7 @@ python 3.6 or later
 ## HAVE A LOOK!
 
 ![Alt text](/readMeSS/pic1.png?raw=true "App looks like:")
-![Alt text](/readMeSS/pic2.png?raw=true "App looks like:")
+![Alt text](/readMeSS/Screenshot (6).png?raw=true "App looks like:")
 ![Alt text](/readMeSS/pic3.png?raw=true "App looks like:")
 ![Alt text](/readMeSS/pic4.png?raw=true "App looks like:")
 
