@@ -6,14 +6,18 @@
 <body>
 	<h1><%=message%> is the predicted salary </h1>
 	<h2>Whereas her claim was: <%=claim%></h2>
-	<% if(says.state == "Understated"){ %>
+	<% if(says.state == "Understated" ){ %>
+	<% if(says.bluff > parseFloat(10)){ %>
 	<h3>Understated her salary</h3>
-	<%}else{%>
+	<% } else{%>
+	<h3>Congratulations! You have an honest employee</h3>
+	<% }} else{ %>
 	<% if(says.bluffStatus == true){ %>
 	<h1>BLUFFFFF!!!</h1>
 	<h4>Bluff % = <%=says.bluff%> % </h4>
 	<% }else{ %>
-	<h2>Congratulations, you have an honest employee</h2>
+	<h2>Congratulations! You have an honest employee</h2>
+<%}}%>
 <%}}%>
 </body>
 </html>
