@@ -27,7 +27,7 @@ app.post('/upload', function(req, res) {
   var level = parseFloat(req.body.level);
   var claim = parseInt(req.body.claim);
   // Use the mv() method to place the file somewhere on your server
-  sampleFile.mv(__dirname+'/data/'+filename+'.csv', function(err) {
+  sampleFile.mv(__dirname+'/data/'+filename, function(err) {
     if (err)
       return res.status(500).send(err);
  	
@@ -43,7 +43,7 @@ app.post('/upload', function(req, res) {
   pythonPath: "C:/Users/hp/Anaconda3-2/python.exe",
   pythonOptions: ['-u'],
   scriptPath: './',
-  args: [filename, level]
+  args: ["./data/"+filename, level]
 };
 
 var shell = new PythonShell('cart.py', options);
