@@ -1,14 +1,31 @@
-<html>
-  <body>
-    <form ref='uploadForm' 
+    <% include partials/header%>
+    <div style="width: 300px; " class= "ui main container segment">
+        <div class ="ui huge header">Bluff-Detector</div>
+    <form class= "ui fluid form"  ref='uploadForm' 
       id='uploadForm' 
       action='http://localhost:3000/upload' 
       method='post' 
       encType="multipart/form-data">
-        <input type="text" name="level"/>
-        <input type="text" name="claim"/>
-        <input type="file" name="sampleFile" />
-        <input type='submit' value='Upload!' />
-    </form>     
-  </body>
-</html>
+      <div class="field">
+       <label>
+          Level in the company:
+         <input type="text" name="level"/><br>
+       </label>
+     </div>
+     <div class="field">
+       <label>
+          Salary claimed while negotiation: 
+         <input type="text" name="claim"/><br>
+       </label>
+         </div>
+     <div class="field">
+        <input  type="file" name="sampleFile" /><br>
+         </div>
+     <div class="field">
+        <input style="color: gray; align-self: center" type='submit' class="ui black inverted button" value='Upload!' /><br>
+    </div>
+    </form>
+    </div>     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<% include partials/footer%>
