@@ -34,7 +34,7 @@ plt.plot(X_grid, regressor.predict(X_grid), color = 'blue')
 plt.title('Truth or Bluff (DRT)')
 plt.xlabel('Position level')
 plt.ylabel('Salary')
+
+plt.savefig('./plotPics/pic.png')
 plt.show()
-
-
 sys.stdout.flush()
