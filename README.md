@@ -24,17 +24,16 @@ python 3.6 or later
 
 ## INSTRUCTIONS
 ```
-clone this Delusion-Detector on your local machine
-Change the path to Python as per your machine in the options variable in app.js
-cd Delusion-Detector
-npm install
-node app.js
-```
+- clone this Delusion-Detector on your local machine
+- Change the path to Python as per your machine in the options variable in app.js
+- cd Delusion-Detector
+- npm install
+- node app.js
 - Open your favorite browser and go to ```localhost:3000```
 - Enter any .csv file that follows the aforementioned details(SampleData has two .csv files for reference )
 - Enter any level and Claimed Salary
 - The Output will be shown besides a Random Forest Regression Plot that will be saved in plotPics for trend analysis!
-
+```
 ## HAVE A LOOK!
 
 ![Alt text](/readMeSS/pic1.png?raw=true "App looks like:")
