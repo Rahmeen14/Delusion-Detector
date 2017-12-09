@@ -50,8 +50,24 @@ var shell = new PythonShell('cart.py', options);
 shell.on('message', function (message) {
 	var len = message.length;
 	message = message.slice(2, len-1);
-	console.log(parseInt(message));
-  res.render("answer", {message: message, claim: claim});
+	message = parseFloat(message);
+	console.log(message);
+ 	var errorVal = parseFloat((message - claim)/claim);
+ 	var bluffStatus = true;
+ 	console.log(errorVal);
+ 	var says = {
+ 		state: "Overstated",
+ 		bluff: Math.abs(errorVal)*100,
+ 		bluffStatus: false
+ 	};
+ 	if(Math.abs(errorVal)>parseFloat(0.01))
+ 		says.bluffStatus = true
+ 	if(errorVal > parseFloat(0))
+ 		{
+ 			says.state = "Understated";
+
+ }
+ 	res.render("answer", {message: message, claim: claim, says:says});
 
 });
 
