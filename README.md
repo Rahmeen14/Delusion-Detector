@@ -2,7 +2,7 @@
 ## A simple Node web app that uses Random Forest Regression to detect if a to-be-employee is lying about his previous salary.
 
 
-This is a simple node app that accepts a companies salary data, i.e., a .csv file that has designations, salaries for those designations and a certain prdered level assigned with each designation depending upon the salary (higher the salary, higher the level).
+This is a simple node app that accepts a companies salary data, i.e., a .csv file that has designations, salaries for those designations and a certain preordered level assigned with each designation depending upon the salary (higher the salary, higher the level).
 Besides this, the app also demands two  inputs:
 
 - The level at which the employee was in the company (a fractional number between 1 and total number of designations) where the fractional part arises by virtue of years of experience. For instance, if I am working as a Senior Executive which is level number 6 with 3 years of experience, then if in my company promotions occur after an average of 6 years of continuing the same post, then my level becomes 6.5 
